@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Grand Lake Drive-In Cinemas</title>
+      <link href="/styles/main.css" rel="stylesheet">
+      <link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
+  </head>
+  <body>
+      <header>
+          <h1 id="title" class="neon">Grand Lake Drive-In Cinemas</h1>
+          <h2 id="description" class="neon">We care about you!</h2>
+      </header>
+    <div id="grand-lake-form"> 
+    <form class="drive-in-form" id="survey-form">
+    <ul class="flex-outer">
+            <h3>PERSONAL DATA</h3>
+            <li>
+            <label for="name">Name </label>
+            <input type="text" name="name" id="name" placeholder="Enter a valid name" required>
+            </li>
+            <li>
+            <label for="surname">Surname </label>
+            <input type="text" name="surname" id="surname" placeholder="Enter a valid surname" required>
+            </li>
+            <li>
+            <label for="email">Email </label>
+            <input type="email" name="email" id="email" placeholder="Enter a valid email address" required>
+            </li>
+            <li>
+            <label for="number">Age </label>
+            <input type="number" name="number" id="number" placeholder="0-125" min="0" max="125" required>
+        </li>
+        <h3>INFRASTRUCTURE</h3>
+        <li>
+            <label for="ddlCity">Select your Stellar Drive-In Cinema by location:</label>
+            <select name="ddlCity" id="ddlCity">
+            <option value="vancouver">Vancouver</option>
+            <option value="toronto">Toronto</option>
+            <option value="quebec">Quebec</option>
+            <option value="montreal">Montreal</option>
+            </select>
+        </li>
+        <li>
+          <label for="ddlFacilities">Facilities are well located and the accessibility is great.</label>
+          <select name="ddlFacilities">
+          <option value="facilities-sagree">Strongly agree</option>
+          <option value="facilities-agree">Agree</option>
+          <option value="facilities-disagree">Disagree</option>
+          <option value="facilities-sdisagree">Strongly disagree</option>
+          </select>
+        </li>
+        <li>
+          <label for="ddlParking">There are enough quantity of parking spaces.</label>
+          <select name="ddlParking" id="ddlParking">
+          <option value="parking-sagree">Strongly agree</option>
+          <option value="parking-agree">Agree</option>
+          <option value="parking-disagree">Disagree</option>
+          <option value="parking-sdagree">Strongly disagree</option>
+          </select>
+        </li>
+        <li>
+          <label for="infraestructure-comment">Anything else you want to add?</label>
+          <br>
+          <textarea name="infraestructure-comment" rows="5" cols="50" placeholder="Put your comment here..." id="infraestructure-comment"></textarea>
+        </li>
+          <h3>BAR</h3>
+        <li>  
+          <label for="ddlRatio">Menus maintain a good quality-quantity-price ratio.</label>
+          <select name="ddlRatio" id="ddlRatio">
+          <option value="ratio-sagree">Strongly agree</option>
+          <option value="ratio-agree">Agree</option>
+          <option value="ratio-disagree">Disagree</option>
+          <option value="ratio-sdisagree">Strongly disagree</option>
+          </select>
+        </li>
+        <li>
+          <label for="ddlWaiters">
+          Waiters are friendly and manage orders efficiently.
+          </label>
+          <select name="ddlWaiters" id="ddlWaiters">
+          <option value="waiter-sagree">Strongly agree</option>
+          <option value="waiter-agree">Agree</option>
+          <option value="waiter-disagree">Disagree</option>
+          <option value="waiter-sdisagree">Strongly disagree</option>
+          </select>
+        </li>
+        <li class="extra-cart">
+         <label for="extra-cart">Would you add something to our cart?</label>
+         <br>
+         <textarea id="extra-cart" name="extra-cart" rows="5" cols="50" placeholder="Put your comment here..."></textarea>
+        </li>
+          <h3>PROJECTIONS</h3>
+          <li class="movies">
+            <label for="film">Which movie projected has been your favourite?</label>
+            <input list="films" id="film" name="film">
+            <datalist id="films">
+              <option value="Avengers: Infinity War"></option>
+              <option value="Hereditary"></option>
+              <option value="Isle of Dogs"></option>
+              <option value="The Force Ingrid"></option>
+              <option value="Logan Lucky"></option>
+              <option value="Close Encounters of the Third Kind"></option>
+              <option value="The Godfather trilogy"></option>
+              <option value="Moana"></option>
+              <option value="Akira"></option>
+              <option value="Stephen King's IT"></option>
+              <option value="Despicable"></option>
+            </datalist>
+          </li>
+          <li>
+          <span>I would like to watch movies of these genres:</span>
+          <ul class="flex-inner">
+         
+                <li>
+                    <input type="checkbox" id="horror">
+                    <label for="horror">Horror</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="thriller">
+                    <label for="thriller">Thriller</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="action">
+                    <label for="action">Action</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="fantasy">
+                    <label for="fantasy">Fantasy</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="sci-fi">
+                    <label for="sci-fi">Sci-Fi</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="drama">
+                    <label for="drama">Drama</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="satire">
+                    <label for="satire">Satire</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="other">
+                    <label for="other">Other</label>
+                </li>
+
+          </ul>  
+        </li>
+
+        <p>Finally, would you like to subscribe to the Grand Lake's Newsletter? You can vote for our next projections!</p>
+        <label for="yes">Yes</label>
+        <input type="radio" name="newsletter" id="yes" value="yes">
+        <label for="no">No</label>
+        <input type="radio" name="newsletter" id="no" value="no" checked>
+
+  </ul>
+  <input type="submit" id="submit" value="Submit">
+</form>
+</div>
+</body>
+</html>

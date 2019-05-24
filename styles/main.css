@@ -1,0 +1,145 @@
+body {
+    background: url('/images/cinema.jpg') no-repeat center fixed;
+    background-size: cover;
+    font-size: 15px;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h1, h2, h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  h3{
+    font-size: 26px;
+  }
+  
+  textarea {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 50%;
+  }
+  
+  /* Classes */
+  
+  .drive-in-form{
+    background-color: rgba(255,255,255,0.9);
+    padding: 1%;
+    border-radius: 0.5%;
+    margin: auto auto 2% auto;
+    text-align: center;
+    width: 80%;
+  }
+
+  .neon {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: neon 3s ease-in-out infinite alternate;
+    -moz-animation: neon 3s ease-in-out infinite alternate;
+    animation: neon 3s ease-in-out infinite alternate;
+  }
+  
+  /* Attributes */
+  
+  #description{
+    font-size: 40px;
+    font-family: 'Verdana', sans-serif;
+    text-align: center;
+  }
+
+  #submit{
+    margin: 2.5%;
+    padding: 1% 5%; 
+    background: #000000; 
+    -webkit-border-radius: 2%;
+    border-radius: 2%;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /* Flexbox CSS, ul and li */
+
+  .flex-outer,
+  .flex-inner {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .flex-outer {
+    max-width: 950px;
+    margin: 0 auto;
+  }
+    
+  .flex-outer li,
+  .flex-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .flex-outer > li > label,
+  .flex-outer li p {
+    flex: 1 0 120px;
+    max-width: 220px;
+  }
+   
+  .flex-outer > li > label + *,
+  .flex-inner {
+    flex: 1 0 180px;
+  }
+
+  .flex-inner li {
+    flex: 1 120px
+  }
+
+  .flex-inner {
+    justify-content: space-around;
+  }
+
+  .flex-inner li {
+    width: 25%;
+  }
+
+  .flex-outer > li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  
+  .flex-outer li label,
+  .flex-outer li p {
+    padding: 8px;
+    font-weight: 300;
+    letter-spacing: .09em;
+  }
+    
+  .flex-outer li p {
+    margin: 0;
+  }
+  
+  .flex-outer li input:not([type='checkbox']),
+  .flex-outer li textarea {
+    padding: 10px;
+    border: none;
+  }
+
+  .flex-newsletter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;  
+  }
+
+  
+  @-webkit-keyframes neon {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 30px #fff, 0 0 30px #4277f4, 0 0 40px #4277f4, 0 0 50px #415cf4, 0 0 60px #415cf4, 0 0 70px #415cf4;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #42aaf4, 0 0 40px #42aaf4, 0 0 50px #42aaf4, 0 0 60px #42aaf4, 0 0 70px #42aaf4, 0 0 80px #42aaf4;
+    }
+  }
+  
