@@ -1,15 +1,20 @@
+@font-face {
+  font-family: "Media Gothic";
+  src: url(Md_Gothic11.ttf);
+}
+
 body {
     background: url('../images/cinema.jpg') no-repeat center fixed;
     background-size: cover;
-    font-size: 15px;
+    font-size: 16px;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
 
   h1, h2, h3{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Media Gothic", Arial, sans-serif
   }
 
   h3{
